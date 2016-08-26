@@ -10,7 +10,6 @@
     <form id="form1" runat="server">
     <div>
         <asp:Label ID="lblGit" runat="server" Text="Git"></asp:Label>
-        <asp:Label ID="lblDay" runat="server" Text="Day: 27/08/2016"></asp:Label>
     </div>
     </form>
 </body>
