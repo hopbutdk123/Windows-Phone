@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultContent.master.cs" Inherits="Example.Example_3.Master_Page.DefaultContent" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <img src="../../Example 2/HTML Server Controls/Images/Smile.jpg" alt="Mặt cười" /><br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        This is default content.<br />
+        </asp:ContentPlaceHolder>
+        <i>This is simple footer.</i>
+    </div>
+    </form>
+</body>
+</html>

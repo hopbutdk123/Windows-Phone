@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+<Ad>
+<ImageUrl>Images/Smile.jpg</ImageUrl>
+<NavigateUrl>http://www.w3schools.com</NavigateUrl>
+<AlternateText>W3Schools Main Site</AlternateText>
+<Impressions>50</Impressions>
+<Keyword>elearning</Keyword>
+</Ad>
+<Ad>
+<ImageUrl>Images/Sad.jpg</ImageUrl>
+<NavigateUrl>http://www.w3schools.com/xhtml/default.asp</NavigateUrl>
+<AlternateText>XHTML Tutorial</AlternateText>
+<Impressions>50</Impressions>
+<Keyword>XHTML</Keyword>
+</Ad>
+</Advertisements>

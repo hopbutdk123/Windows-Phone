@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MultipleContent.master.cs" Inherits="Example.Example_3.Master_Page.MultipleContent" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <img src="../../Example 2/HTML Server Controls/Images/Smile.jpg" /><br />
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div style="border-right:1px solid; padding-right:15px; border-top:1px solid; padding-left:15px; font-size:small; padding-bottom:15px; margin:15px; border-left:1px solid;
+        width:417px; padding-top:15px; border-bottom:1px solid; font-family:Verdana; background-color:#ffffcc">
+            <strong>
+                OTHER LINKS<br />
+            </strong>
+            <asp:ContentPlaceHolder ID="OtherLinksContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <i>This is a simple footer.</i>
+    </div>
+    </form>
+</body>
+</html>

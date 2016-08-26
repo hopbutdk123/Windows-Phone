@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Example.Example_3.Website_Navigation.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Navigation Test</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+            <tr>
+                <td style="width: 228px; vertical-align: top">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" Width="264px" Font-Size="0.8em" Font-Names="Verdana" PathSeparator=" : ">
+                        <NodeStyle Font-Bold="True" ForeColor="#666666" />
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#1C5E55" />
+                        <PathSeparatorTemplate>
+                            <asp:Image ID="Image1" runat="server" />
+                        </PathSeparatorTemplate>
+                        <RootNodeStyle Font-Bold="True" ForeColor="#1C5E55" />
+                        <RootNodeTemplate>
+                            <b>Root</b>
+                        </RootNodeTemplate>
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <CurrentNodeTemplate>
+                            <%# Eval("title") %><br />
+                            <small><i>&nbsp;<%# Eval("description") %></i></small>
+                        </CurrentNodeTemplate>
+                    </asp:SiteMapPath>
+                    <br />
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="Contacts" NodeIndent="10">
+                        <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+                        <HoverNodeStyle Font-Underline="False" />
+                        <SelectedNodeStyle Font-Underline="true" HorizontalPadding="0px" VerticalPadding="0px" />
+                        <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" VerticalPadding="0px" NodeSpacing="0px" />
+                    </asp:TreeView>
+                </td>
+                <td style="vertical-align: top; padding: 10px; width: 301px; background-color: lightgoldenrodyellow">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+        </asp:Menu>
+        <div>
+        </div>
+    </form>
+</body>
+</html>

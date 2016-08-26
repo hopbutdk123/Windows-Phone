@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80CB6BFF-D593-4835-87B5-17A5B2E3BC6F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Example</RootNamespace>
+    <AssemblyName>Example</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Example 2\ASP.Net Server Controls\Adrotator.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Button.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Calendar.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\CheckBox.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\CheckBoxList.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\CurrencyConverter.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\DropDownList.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\GreetingCardMaker.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Hyperlink.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Image.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\ImageButton.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Label.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Literal.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Panel.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\RadioButton.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\RadioButtonList.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\Table.aspx" />
+    <Content Include="Example 2\ASP.Net Server Controls\XML\Ad1.xml" />
+    <Content Include="Example 2\Example 2.1.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlAnchor.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlButton.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlForm.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlImage.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlInputCheckBox.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlInputFile.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlInputHidden.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlInputImage.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlInputRadioButton.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlTable.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlTableCellExample.aspx" />
+    <Content Include="Example 2\HTML Server Controls\HtmlTextArea.aspx" />
+    <Content Include="Example 2\HTML Server Controls\Images\Sad.jpg" />
+    <Content Include="Example 2\HTML Server Controls\Images\Smile.jpg" />
+    <Content Include="Example 3\Master Page\DefaultContentPage.aspx" />
+    <Content Include="Example 3\Master Page\MultipleContentPage.aspx" />
+    <Content Include="Example 3\Master Page\SimpleContentPage.aspx" />
+    <Content Include="Example 3\Master Page\TableContentPage.aspx" />
+    <Content Include="Example 3\Web User Controls\Footer.ascx" />
+    <Content Include="Example 3\Web User Controls\FooterHost.aspx" />
+    <Content Include="Example 3\Web User Controls\LinkMenu.ascx" />
+    <Content Include="Example 3\Web User Controls\MenuHost.aspx" />
+    <Content Include="Example 3\Website Navigation\financial.aspx" />
+    <Content Include="Example 3\Website Navigation\StyleSheet.css" />
+    <Content Include="packages.config" />
+    <Content Include="Example 3\Master Page\DefaultContent.Master" />
+    <Content Include="Example 3\Master Page\SiteTemplate.Master" />
+    <Content Include="Example 3\Master Page\MultipleContent.Master" />
+    <Content Include="Example 3\Master Page\TableMaster.Master" />
+    <Content Include="Example 3\Website Navigation\Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Example 3\Website Navigation\MasterPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Example 2\ASP.Net Server Controls\Adrotator.aspx.cs">
+      <DependentUpon>Adrotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Adrotator.aspx.designer.cs">
+      <DependentUpon>Adrotator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Button.aspx.cs">
+      <DependentUpon>Button.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Button.aspx.designer.cs">
+      <DependentUpon>Button.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\CheckBox.aspx.cs">
+      <DependentUpon>CheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\CheckBox.aspx.designer.cs">
+      <DependentUpon>CheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\CheckBoxList.aspx.cs">
+      <DependentUpon>CheckBoxList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\CheckBoxList.aspx.designer.cs">
+      <DependentUpon>CheckBoxList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\CurrencyConverter.aspx.cs">
+      <DependentUpon>CurrencyConverter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\CurrencyConverter.aspx.designer.cs">
+      <DependentUpon>CurrencyConverter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\DropDownList.aspx.cs">
+      <DependentUpon>DropDownList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\DropDownList.aspx.designer.cs">
+      <DependentUpon>DropDownList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\GreetingCardMaker.aspx.cs">
+      <DependentUpon>GreetingCardMaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\GreetingCardMaker.aspx.designer.cs">
+      <DependentUpon>GreetingCardMaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Hyperlink.aspx.cs">
+      <DependentUpon>Hyperlink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Hyperlink.aspx.designer.cs">
+      <DependentUpon>Hyperlink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Image.aspx.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Image.aspx.designer.cs">
+      <DependentUpon>Image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\ImageButton.aspx.cs">
+      <DependentUpon>ImageButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\ImageButton.aspx.designer.cs">
+      <DependentUpon>ImageButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Label.aspx.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Label.aspx.designer.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Literal.aspx.cs">
+      <DependentUpon>Literal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Literal.aspx.designer.cs">
+      <DependentUpon>Literal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\RadioButton.aspx.cs">
+      <DependentUpon>RadioButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\RadioButton.aspx.designer.cs">
+      <DependentUpon>RadioButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\RadioButtonList.aspx.cs">
+      <DependentUpon>RadioButtonList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\RadioButtonList.aspx.designer.cs">
+      <DependentUpon>RadioButtonList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Table.aspx.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\ASP.Net Server Controls\Table.aspx.designer.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\Example 2.1.aspx.cs">
+      <DependentUpon>Example 2.1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\Example 2.1.aspx.designer.cs">
+      <DependentUpon>Example 2.1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlAnchor.aspx.cs">
+      <DependentUpon>HtmlAnchor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlAnchor.aspx.designer.cs">
+      <DependentUpon>HtmlAnchor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlButton.aspx.cs">
+      <DependentUpon>HtmlButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlButton.aspx.designer.cs">
+      <DependentUpon>HtmlButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlForm.aspx.cs">
+      <DependentUpon>HtmlForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlForm.aspx.designer.cs">
+      <DependentUpon>HtmlForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlImage.aspx.cs">
+      <DependentUpon>HtmlImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlImage.aspx.designer.cs">
+      <DependentUpon>HtmlImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputCheckBox.aspx.cs">
+      <DependentUpon>HtmlInputCheckBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputCheckBox.aspx.designer.cs">
+      <DependentUpon>HtmlInputCheckBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputFile.aspx.cs">
+      <DependentUpon>HtmlInputFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputFile.aspx.designer.cs">
+      <DependentUpon>HtmlInputFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputHidden.aspx.cs">
+      <DependentUpon>HtmlInputHidden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputHidden.aspx.designer.cs">
+      <DependentUpon>HtmlInputHidden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputImage.aspx.cs">
+      <DependentUpon>HtmlInputImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputImage.aspx.designer.cs">
+      <DependentUpon>HtmlInputImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputRadioButton.aspx.cs">
+      <DependentUpon>HtmlInputRadioButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlInputRadioButton.aspx.designer.cs">
+      <DependentUpon>HtmlInputRadioButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlTable.aspx.cs">
+      <DependentUpon>HtmlTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlTable.aspx.designer.cs">
+      <DependentUpon>HtmlTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlTableCellExample.aspx.cs">
+      <DependentUpon>HtmlTableCellExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlTableCellExample.aspx.designer.cs">
+      <DependentUpon>HtmlTableCellExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlTextArea.aspx.cs">
+      <DependentUpon>HtmlTextArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 2\HTML Server Controls\HtmlTextArea.aspx.designer.cs">
+      <DependentUpon>HtmlTextArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\DefaultContent.Master.cs">
+      <DependentUpon>DefaultContent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\DefaultContent.Master.designer.cs">
+      <DependentUpon>DefaultContent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\DefaultContentPage.aspx.cs">
+      <DependentUpon>DefaultContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\DefaultContentPage.aspx.designer.cs">
+      <DependentUpon>DefaultContentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\MultipleContent.Master.cs">
+      <DependentUpon>MultipleContent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\MultipleContent.Master.designer.cs">
+      <DependentUpon>MultipleContent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\MultipleContentPage.aspx.cs">
+      <DependentUpon>MultipleContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\MultipleContentPage.aspx.designer.cs">
+      <DependentUpon>MultipleContentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\SimpleContentPage.aspx.cs">
+      <DependentUpon>SimpleContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\SimpleContentPage.aspx.designer.cs">
+      <DependentUpon>SimpleContentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\SiteTemplate.Master.cs">
+      <DependentUpon>SiteTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\SiteTemplate.Master.designer.cs">
+      <DependentUpon>SiteTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\TableContentPage.aspx.cs">
+      <DependentUpon>TableContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\TableContentPage.aspx.designer.cs">
+      <DependentUpon>TableContentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Master Page\TableMaster.Master.cs">
+      <DependentUpon>TableMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Master Page\TableMaster.Master.designer.cs">
+      <DependentUpon>TableMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\FooterHost.aspx.cs">
+      <DependentUpon>FooterHost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\FooterHost.aspx.designer.cs">
+      <DependentUpon>FooterHost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\LinkMenu.ascx.cs">
+      <DependentUpon>LinkMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\LinkMenu.ascx.designer.cs">
+      <DependentUpon>LinkMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\MenuHost.aspx.cs">
+      <DependentUpon>MenuHost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Web User Controls\MenuHost.aspx.designer.cs">
+      <DependentUpon>MenuHost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Website Navigation\financial.aspx.cs">
+      <DependentUpon>financial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Website Navigation\financial.aspx.designer.cs">
+      <DependentUpon>financial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example 3\Website Navigation\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example 3\Website Navigation\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13341</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:13341/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

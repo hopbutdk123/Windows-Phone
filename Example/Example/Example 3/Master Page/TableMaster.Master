@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TableMaster.master.cs" Inherits="Example.Example_3.Master_Page.TableMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table>
+            <tr>
+                <td colspan="2" style="background:#ffccff">
+                    <!--MyHeader-->
+                    <img src="../../Example 2/HTML Server Controls/Images/Smile.jpg" /><br />
+                </td>
+            </tr>
+            <tr>
+                <td style="background:#ffffcc">
+                    <asp:TreeView ID="TreeView1" runat="server" Width="150px">
+                        <Nodes>
+                            <asp:TreeNode Text="Root" Value="New Node">
+                                <asp:TreeNode Text="Page 1" Value="Page 1"></asp:TreeNode>
+                                <asp:TreeNode Text="Page 2" Value="Page 2"></asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background:#ccff33"
+                    <i>My footer</i>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

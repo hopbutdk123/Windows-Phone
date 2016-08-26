@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="Home"  description="Home">
+    <siteMapNode title="Information" description="Learn about out company">
+      <siteMapNode url="Example 3/Website Navigation/aboutus.aspx" title="About Us"  description="How RevoTech was founded" />
+      <siteMapNode url="Example 3/Website Navigation/financial.aspx" title="Investing"  description="Financial reports and investor analysis" />
+    </siteMapNode>
+    <siteMapNode title="Products" description="Learn about our products" url="Example 3/Website Navigation/products.aspx">
+      <siteMapNode title="RevoStock" description="Investment software for stock charting" url="Example 3/Website Navigation/product1.aspx"/>
+      <siteMapNode title="RevoAnalyze" description="Investment software for yield analysis" url="Example 3/Website Navigation/product2.aspx"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
